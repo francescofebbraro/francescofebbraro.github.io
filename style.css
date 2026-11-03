@@ -1,21 +1,20 @@
 /* ============================================================
    Francesco Febbraro — personal site
-   Palette: warm parchment background (#f7f5ef), navy ink (#1c2433),
-   ochre accent (#a96e2c), restrained blue links (#2f5d8a).
+   Palette: white background, near-black ink (#1a1a1a),
+   deep blue accent and links (#1f4e79).
    Type: Spectral (display serif) + Inter (body/utility), via Google Fonts.
-   Photo sits left of the name in the hero row.
    ============================================================ */
 
 :root {
-    --ink:        #1c2433;   /* near-navy text */
-    --ink-soft:   #44506a;   /* secondary text */
-    --parchment:  #f7f5ef;   /* warm parchment background */
+    --ink:        #1a1a1a;   /* body text */
+    --ink-soft:   #555555;   /* secondary text */
+    --parchment:  #ffffff;   /* page background */
     --card:       #ffffff;
-    --rule:       #d9d4c6;   /* hairline */
-    --accent:     #a96e2c;   /* ochre */
-    --accent-dim: #c9a877;
-    --link:       #2f5d8a;   /* restrained blue for links */
-    --heading:    #1c2433;   /* headings share the ink navy */
+    --rule:       #e2e2e2;   /* hairline */
+    --accent:     #1f4e79;   /* deep blue */
+    --accent-dim: #9db4cc;
+    --link:       #1f4e79;   /* links */
+    --heading:    #111111;   /* headings */
     --maxw:       720px;
 }
 
@@ -97,7 +96,7 @@ header.hero {
 
 /* ---------- Prose ---------- */
 p { margin: 0 0 18px; }
-a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(47,93,138,0.25); }
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(31,78,121,0.25); }
 a:hover { border-bottom-color: var(--link); }
 strong { font-weight: 600; }
 
