@@ -186,6 +186,36 @@ h3 {
     margin: 0;
 }
 
+.paper .status + .status { margin-left: 6px; }
+.paper .status a { color: inherit; border-bottom: none; }
+.paper .paper-note {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin: 2px 0 0;
+}
+
+/* ---------- Collapsible abstract ---------- */
+.abstract-toggle { margin: 16px 0 4px; }
+.abstract-toggle summary {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+.abstract-toggle summary::-webkit-details-marker { display: none; }
+.abstract-toggle summary::before {
+    content: "\25B8";
+    display: inline-block;
+    margin-right: 6px;
+    transition: transform .15s;
+}
+.abstract-toggle[open] summary::before { transform: rotate(90deg); }
+.abstract-toggle summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.abstract-toggle .abstract { margin: 6px 0 0; }
+
 /* ---------- Contact ---------- */
 .contact-grid { font-size: 0.96rem; line-height: 1.7; }
 .contact-grid .label {
